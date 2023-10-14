@@ -4,6 +4,8 @@ node{
         sh """
             pwd 
             sudo apt-get install docker.io -y
+            sudo systemctl enable docker --now
+            sudo docker version
 
         """
 
