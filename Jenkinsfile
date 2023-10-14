@@ -1,5 +1,9 @@
 import groovy.json.JsonOutput
 node{
+    stage('Checkout code') {
+
+            checkout scm
+    }
     stage('Configure'){
         sh """
             pwd 
