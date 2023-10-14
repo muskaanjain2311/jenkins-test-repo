@@ -3,7 +3,7 @@ node{
     stage('Configure'){
         sh """
             pwd 
-            apt-get install docker.io -y
+            sudo apt-get install docker.io -y
 
         """
 
