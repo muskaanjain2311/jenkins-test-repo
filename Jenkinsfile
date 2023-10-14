@@ -13,6 +13,7 @@ node{
     stage('Build'){
         sh """
             sudo docker build -t muskaanjain2311/nginx-test .
+        """
 
     }
     stage('Push'){
